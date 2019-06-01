@@ -94,7 +94,17 @@
 																																<!--
 																																<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://patty116.typeform.com/to/Jz4hCb"></iframe> <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
 																																-->
-																																<iframe width="100%" height="100%" frameborder="0" src="./img/coming-soon.png"></iframe></script>
+																																<img id="imgFitWindowResize" src="./img/coming-soon.png">
+																															<script type="text/javascript" language="JavaScript">
+																															  function set_body_width() { // set body height = window height
+																															    var wh = $(window).width();
+																															    $(".imgFitWindowResize").width(wh);
+																															  }
+																															  $(document).ready(function() {
+																															    set_body_width();
+																															    $(window).bind('resize', function() { set_body_width(); });
+																															  });
+																															</script>
 																																
 
 																															<footer id="footer" class="home">
