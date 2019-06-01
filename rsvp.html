@@ -47,13 +47,23 @@
 																																				<a href="/wedding/abrahampattysayido">Abraham &amp; Patty</a>
 																																			</h1>
 																																			<div class="visible-sm visible-xs">
-																																				<div class="nav-control zolaicon-public zolaicon-public-hamburger-menu" role="button"></div>
+																																				<div class="topnav">
+																																					<div onclick="myFunction()" class="nav-control zolaicon-public zolaicon-public-hamburger-menu" role="button"></div>
+																																					<div id="myLinks">
+																																							<a href="./index.html">Home</a>
+																																							<a href="./schedule.html">Schedule</a>
+																																							<a href="./gallery.html">Gallery</a>
+																																							<a href="./poi.html">Things To Do</a>
+																																							<a href="./faq.html">Q&amp;A</a>
+																																							<a href="./rsvp.html" class="active">RSVP</a>
+ 																																					</div>
+																																				</div>
 																																			</div>
 																																			<div class="pages-nav-container ">
 																																				<div class="nav-container clearfix">
 																																					<ul class="list-inline">
 																																						<li>
-																																							<a href="./index.html" class="active">Home</a>
+																																							<a href="./index.html">Home</a>
 																																						</li>
 																																						<li>
 																																							<a href="./schedule.html">Schedule</a>
@@ -68,7 +78,7 @@
 																																							<a href="./faq.html">Q&amp;A</a>
 																																						</li>
 																																						<li>
-																																							<a href="./rsvp.html">RSVP</a>
+																																							<a href="./rsvp.html" class="active">RSVP</a>
 																																						</li>
 																																					</ul>
 																																				</div>
@@ -136,6 +146,16 @@
 																															<div class="notifications-container"></div>
 																														</div>
 																													</div>
+																													<script>
+																													function myFunction() {
+																													  var x = document.getElementById("myLinks");
+																													  if (x.style.display === "block") {
+																													    x.style.display = "none";
+																													  } else {
+																													    x.style.display = "block";
+																													  }
+																													}
+																													</script>
 																													<script type="text/javascript" src="https://d1tntvpcrzvon2.cloudfront.net/vwassets/new/static/js/commons.6ef16f82.js"></script>
 																													<noscript>
 																														<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1493477697531320&amp;ev=PageView&amp;noscript=1">
