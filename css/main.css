@@ -44772,6 +44772,12 @@ html.public-wedding-page {
     padding: 50px 0;
   }
 }
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
 #public-wrapper .entity-sections.faq-sections .entity-section,
 #public-wrapper .entity-sections.travel-sections .entity-section,
 #public-wrapper .entity-sections.wedding-party-sections .entity-section,
