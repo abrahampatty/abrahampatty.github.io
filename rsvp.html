@@ -27,7 +27,7 @@
 																									<meta name="keywords" content="wedding website, Patty Regina, Abraham Markus Martinus, Patty and Abraham" data-react-helmet="true">
 																										<meta name="description" content="The wedding website of Patty Regina and Abraham Markus Martinus" data-react-helmet="true">
 																										</head>
-																										<body class="">
+																										<body id="myBody" class="">
 																											<div id="root">
 																												<div id="zola-wedding-container">
 																													<div>
@@ -48,18 +48,10 @@
 																																			</h1>
 																																			<div class="visible-sm visible-xs">
 																																				<div class="topnav">
-																																					<div onclick="myFunction()" class="nav-control zolaicon-public zolaicon-public-hamburger-menu" role="button"></div>
-																																					<div id="myLinks">
-																																							<a href="./index.html">Home</a>
-																																							<a href="./schedule.html">Schedule</a>
-																																							<a href="./gallery.html">Gallery</a>
-																																							<a href="./poi.html">Things To Do</a>
-																																							<a href="./faq.html">Q&amp;A</a>
-																																							<a href="./rsvp.html" class="active">RSVP</a>
- 																																					</div>
+																																					<div id="myBurger" onclick="otherFunction()" class="nav-control zolaicon-public zolaicon-public-hamburger-menu" role="button"></div>
 																																				</div>
 																																			</div>
-																																			<div class="pages-nav-container ">
+																																			<div id="myContainer" class="pages-nav-container ">
 																																				<div class="nav-container clearfix">
 																																					<ul class="list-inline">
 																																						<li>
@@ -151,12 +143,18 @@
 																														</div>
 																													</div>
 																													<script>
-																													function myFunction() {
-																													  var x = document.getElementById("myLinks");
-																													  if (x.style.display === "block") {
-																													    x.style.display = "none";
+																													function otherFunction() {
+																													  var x = document.getElementById("myBody");
+																													  var y = document.getElementById("myBurger");
+																													  var z = document.getElementById("myContainer");
+																													  if ( y.classList.contains("zolaicon-public-hamburger-menu")) {
+																													    x.className = "modal-open";
+																													    y.className = "nav-control zolaicon-public zolaicon-public-close";
+																													    z.className = "pages-nav-container expanded";
 																													  } else {
-																													    x.style.display = "block";
+																													    x.className = "";
+																													    y.className = "nav-control zolaicon-public zolaicon-public-hamburger-menu";
+																													    z.className = "pages-nav-container ";
 																													  }
 																													}
 																													</script>
