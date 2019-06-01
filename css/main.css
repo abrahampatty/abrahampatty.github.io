@@ -16,6 +16,20 @@
 }
 @media (min-width: 768px) {
 }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
